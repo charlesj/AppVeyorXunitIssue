@@ -1,4 +1,4 @@
 version: 1.0.0.{build}
 os: Visual Studio 2015
 before_build:
-    - nuget restore
+    - nuget restore app\XunitExample.Tests.sln
