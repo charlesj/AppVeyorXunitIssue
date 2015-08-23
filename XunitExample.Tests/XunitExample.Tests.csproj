@@ -57,12 +57,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CanReadAppConfig.cs" />
+    <Compile Include="CanReadUsingMiddleClass.cs" />
     <Compile Include="NonAppConfigTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XunitExample\XunitExample.csproj">
+      <Project>{e6aa17e5-7cfa-4a26-92de-c6c8e0b76ef7}</Project>
+      <Name>XunitExample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
